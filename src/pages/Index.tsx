@@ -14,24 +14,24 @@ const Index = () => {
   };
 
   const videoLinks = [
-    { title: "Основи авіації", duration: "45 хв", url: "https://youtube.com", thumbnail: "https://cdn.poehali.dev/projects/fddec23a-406b-444f-b3ab-7c5306f5d961/files/578daca3-7069-4624-841d-71db4517fe19.jpg" },
-    { title: "Метеорологія для пілотів", duration: "52 хв", url: "https://youtube.com", thumbnail: "https://cdn.poehali.dev/projects/fddec23a-406b-444f-b3ab-7c5306f5d961/files/02d4ba0a-9e5d-49db-912a-51718be6961c.jpg" },
-    { title: "Аеродинаміка польоту", duration: "38 хв", url: "https://youtube.com", thumbnail: "https://cdn.poehali.dev/projects/fddec23a-406b-444f-b3ab-7c5306f5d961/files/578daca3-7069-4624-841d-71db4517fe19.jpg" },
-    { title: "Навігація та GPS", duration: "41 хв", url: "https://youtube.com", thumbnail: "https://cdn.poehali.dev/projects/fddec23a-406b-444f-b3ab-7c5306f5d961/files/02d4ba0a-9e5d-49db-912a-51718be6961c.jpg" },
+    { title: "Основы авиации", duration: "45 мин", url: "https://youtube.com", thumbnail: "https://cdn.poehali.dev/projects/fddec23a-406b-444f-b3ab-7c5306f5d961/files/578daca3-7069-4624-841d-71db4517fe19.jpg" },
+    { title: "Метеорология для пилотов", duration: "52 мин", url: "https://youtube.com", thumbnail: "https://cdn.poehali.dev/projects/fddec23a-406b-444f-b3ab-7c5306f5d961/files/02d4ba0a-9e5d-49db-912a-51718be6961c.jpg" },
+    { title: "Аэродинамика полёта", duration: "38 мин", url: "https://youtube.com", thumbnail: "https://cdn.poehali.dev/projects/fddec23a-406b-444f-b3ab-7c5306f5d961/files/578daca3-7069-4624-841d-71db4517fe19.jpg" },
+    { title: "Навигация и GPS", duration: "41 мин", url: "https://youtube.com", thumbnail: "https://cdn.poehali.dev/projects/fddec23a-406b-444f-b3ab-7c5306f5d961/files/02d4ba0a-9e5d-49db-912a-51718be6961c.jpg" },
   ];
 
   const tests = [
-    { title: "Теоретичний іспит PPL", questions: 60, url: "https://forms.google.com" },
-    { title: "Метеорологія - Модуль 1", questions: 30, url: "https://forms.google.com" },
-    { title: "Правила польотів VFR", questions: 25, url: "https://forms.google.com" },
-    { title: "Аварійні процедури", questions: 40, url: "https://forms.google.com" },
+    { title: "Теоретический экзамен PPL", questions: 60, url: "https://forms.google.com" },
+    { title: "Метеорология - Модуль 1", questions: 30, url: "https://forms.google.com" },
+    { title: "Правила полётов VFR", questions: 25, url: "https://forms.google.com" },
+    { title: "Аварийные процедуры", questions: 40, url: "https://forms.google.com" },
   ];
 
   const materials = [
-    { title: "Аеронавігаційні карти України", type: "PDF", size: "12 MB", icon: "Map" },
-    { title: "Інструкція пілота Cessna 172", type: "PDF", size: "8.5 MB", icon: "BookOpen" },
-    { title: "Чек-лист перед польотом", type: "PDF", size: "1.2 MB", icon: "ClipboardCheck" },
-    { title: "Радіозв'язок: фразеологія", type: "PDF", size: "3.4 MB", icon: "Radio" },
+    { title: "Аэронавигационные карты", type: "PDF", size: "12 MB", icon: "Map" },
+    { title: "Инструкция пилота Cessna 172", type: "PDF", size: "8.5 MB", icon: "BookOpen" },
+    { title: "Чек-лист перед полётом", type: "PDF", size: "1.2 MB", icon: "ClipboardCheck" },
+    { title: "Радиосвязь: фразеология", type: "PDF", size: "3.4 MB", icon: "Radio" },
   ];
 
   return (
@@ -41,7 +41,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 animate-fade-in">
               <Icon name="Plane" size={32} className="text-primary" />
-              <h1 className="text-2xl font-bold text-foreground">Школа Пілотів</h1>
+              <h1 className="text-2xl font-bold text-foreground">Школа Пилотов</h1>
             </div>
             <div className="hidden md:flex space-x-1">
               {["home", "videos", "tests", "materials", "library", "contacts"].map((section) => (
@@ -51,12 +51,12 @@ const Index = () => {
                   onClick={() => scrollToSection(section)}
                   className="transition-all"
                 >
-                  {section === "home" && "Головна"}
-                  {section === "videos" && "Відеокурси"}
-                  {section === "tests" && "Тестування"}
-                  {section === "materials" && "Матеріали"}
-                  {section === "library" && "Бібліотека"}
-                  {section === "contacts" && "Контакти"}
+                  {section === "home" && "Главная"}
+                  {section === "videos" && "Видеокурсы"}
+                  {section === "tests" && "Тестирование"}
+                  {section === "materials" && "Материалы"}
+                  {section === "library" && "Библиотека"}
+                  {section === "contacts" && "Контакты"}
                 </Button>
               ))}
             </div>
@@ -78,16 +78,16 @@ const Index = () => {
             <Icon name="Plane" size={80} className="text-primary" />
           </div>
           <h2 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
-            Ваш шлях до неба
+            Ваш путь в небо
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-            Професійна підготовка пілотів з досвідченими інструкторами. 
-            Від теорії до практичних навичок польоту.
+            Профессиональная подготовка пилотов с опытными инструкторами. 
+            От теории до практических навыков полёта.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg" onClick={() => scrollToSection("videos")}>
               <Icon name="PlayCircle" size={24} className="mr-2" />
-              Почати навчання
+              Начать обучение
             </Button>
             <Button size="lg" variant="outline" className="text-lg" onClick={() => scrollToSection("tests")}>
               <Icon name="FileCheck" size={24} className="mr-2" />
@@ -101,9 +101,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <Icon name="Video" size={48} className="text-primary mx-auto mb-4" />
-            <h3 className="text-4xl font-bold mb-4">Відеокурси</h3>
+            <h3 className="text-4xl font-bold mb-4">Видеокурсы</h3>
             <p className="text-muted-foreground text-lg">
-              Навчальні матеріали від сертифікованих інструкторів
+              Учебные материалы от сертифицированных инструкторов
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -131,7 +131,7 @@ const Index = () => {
                 <CardContent>
                   <Button className="w-full" asChild>
                     <a href={video.url} target="_blank" rel="noopener noreferrer">
-                      Дивитись курс
+                      Смотреть курс
                     </a>
                   </Button>
                 </CardContent>
@@ -145,9 +145,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <Icon name="ClipboardList" size={48} className="text-primary mx-auto mb-4" />
-            <h3 className="text-4xl font-bold mb-4">Тестування</h3>
+            <h3 className="text-4xl font-bold mb-4">Тестирование</h3>
             <p className="text-muted-foreground text-lg">
-              Перевірте свої знання за допомогою офіційних тестів
+              Проверьте свои знания с помощью официальных тестов
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -160,14 +160,14 @@ const Index = () => {
                   </CardTitle>
                   <CardDescription className="flex items-center">
                     <Icon name="HelpCircle" size={16} className="mr-2" />
-                    {test.questions} питань
+                    {test.questions} вопросов
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Button className="w-full" variant="default" asChild>
                     <a href={test.url} target="_blank" rel="noopener noreferrer">
                       <Icon name="ExternalLink" size={18} className="mr-2" />
-                      Почати тест
+                      Начать тест
                     </a>
                   </Button>
                 </CardContent>
@@ -181,9 +181,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <Icon name="FolderOpen" size={48} className="text-primary mx-auto mb-4" />
-            <h3 className="text-4xl font-bold mb-4">Навчальні матеріали</h3>
+            <h3 className="text-4xl font-bold mb-4">Учебные материалы</h3>
             <p className="text-muted-foreground text-lg">
-              Завантажте необхідні документи та інструкції
+              Скачайте необходимые документы и инструкции
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -201,7 +201,7 @@ const Index = () => {
                 <CardContent>
                   <Button className="w-full" variant="outline">
                     <Icon name="Download" size={18} className="mr-2" />
-                    Завантажити
+                    Скачать
                   </Button>
                 </CardContent>
               </Card>
@@ -214,68 +214,68 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-in">
             <Icon name="Library" size={48} className="text-primary mx-auto mb-4" />
-            <h3 className="text-4xl font-bold mb-4">Бібліотека знань</h3>
+            <h3 className="text-4xl font-bold mb-4">Библиотека знаний</h3>
             <p className="text-muted-foreground text-lg">
-              Корисна інформація для майбутніх пілотів
+              Полезная информация для будущих пилотов
             </p>
           </div>
           <Tabs defaultValue="basics" className="max-w-4xl mx-auto">
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="basics">Основи</TabsTrigger>
+              <TabsTrigger value="basics">Основы</TabsTrigger>
               <TabsTrigger value="regulations">Правила</TabsTrigger>
-              <TabsTrigger value="safety">Безпека</TabsTrigger>
+              <TabsTrigger value="safety">Безопасность</TabsTrigger>
             </TabsList>
             <TabsContent value="basics" className="space-y-4">
               <Card>
                 <CardHeader>
-                  <CardTitle>Принципи польоту</CardTitle>
-                  <CardDescription>Базові концепції аеродинаміки</CardDescription>
+                  <CardTitle>Принципы полёта</CardTitle>
+                  <CardDescription>Базовые концепции аэродинамики</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-2 text-muted-foreground">
-                  <p>• Чотири основні сили: підйомна сила, вага, тяга, опір</p>
-                  <p>• Принцип Бернуллі та робота крила</p>
-                  <p>• Кути атаки та критичні режими</p>
-                  <p>• Керування літаком: елерони, руль висоти, руль напрямку</p>
+                  <p>• Четыре основные силы: подъёмная сила, вес, тяга, сопротивление</p>
+                  <p>• Принцип Бернулли и работа крыла</p>
+                  <p>• Углы атаки и критические режимы</p>
+                  <p>• Управление самолётом: элероны, руль высоты, руль направления</p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Авіаційні прилади</CardTitle>
-                  <CardDescription>Основне обладнання кабіни</CardDescription>
+                  <CardTitle>Авиационные приборы</CardTitle>
+                  <CardDescription>Основное оборудование кабины</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-2 text-muted-foreground">
-                  <p>• Індикатор швидкості та висотомір</p>
-                  <p>• Авіагоризонт та курсовий гіроскоп</p>
-                  <p>• Варіометр та компас</p>
-                  <p>• Навігаційне обладнання GPS/VOR</p>
+                  <p>• Индикатор скорости и высотомер</p>
+                  <p>• Авиагоризонт и курсовой гироскоп</p>
+                  <p>• Вариометр и компас</p>
+                  <p>• Навигационное оборудование GPS/VOR</p>
                 </CardContent>
               </Card>
             </TabsContent>
             <TabsContent value="regulations" className="space-y-4">
               <Card>
                 <CardHeader>
-                  <CardTitle>Правила повітряного руху</CardTitle>
-                  <CardDescription>VFR та IFR правила</CardDescription>
+                  <CardTitle>Правила воздушного движения</CardTitle>
+                  <CardDescription>VFR и IFR правила</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-2 text-muted-foreground">
-                  <p>• Мінімальні метеоумови для VFR польотів</p>
-                  <p>• Правила правостороннього та лівостороннього кола</p>
-                  <p>• Зони контрольованого та неконтрольованого повітряного простору</p>
-                  <p>• Ешелонування та пріоритет повітряних суден</p>
+                  <p>• Минимальные метеоусловия для VFR полётов</p>
+                  <p>• Правила правостороннего и левостороннего круга</p>
+                  <p>• Зоны контролируемого и неконтролируемого воздушного пространства</p>
+                  <p>• Эшелонирование и приоритет воздушных судов</p>
                 </CardContent>
               </Card>
             </TabsContent>
             <TabsContent value="safety" className="space-y-4">
               <Card>
                 <CardHeader>
-                  <CardTitle>Аварійні процедури</CardTitle>
-                  <CardDescription>Дії у критичних ситуаціях</CardDescription>
+                  <CardTitle>Аварийные процедуры</CardTitle>
+                  <CardDescription>Действия в критических ситуациях</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-2 text-muted-foreground">
-                  <p>• Відмова двигуна: вибір майданчика для посадки</p>
-                  <p>• Штопор: розпізнавання та виведення</p>
-                  <p>• Пожежа на борту: протипожежні процедури</p>
-                  <p>• Аварійна посадка: підготовка та виконання</p>
+                  <p>• Отказ двигателя: выбор площадки для посадки</p>
+                  <p>• Штопор: распознавание и выход</p>
+                  <p>• Пожар на борту: противопожарные процедуры</p>
+                  <p>• Аварийная посадка: подготовка и выполнение</p>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -287,9 +287,9 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center animate-fade-in">
             <Icon name="Mail" size={48} className="text-primary mx-auto mb-4" />
-            <h3 className="text-4xl font-bold mb-4">Контакти</h3>
+            <h3 className="text-4xl font-bold mb-4">Контакты</h3>
             <p className="text-muted-foreground text-lg mb-8">
-              Маєте питання? Зв'яжіться з нашою командою інструкторів
+              Есть вопросы? Свяжитесь с нашей командой инструкторов
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <Card>
@@ -309,19 +309,19 @@ const Index = () => {
               <Card>
                 <CardHeader>
                   <Icon name="MapPin" size={32} className="text-primary mx-auto mb-2" />
-                  <CardTitle className="text-lg">Адреса</CardTitle>
-                  <CardDescription>м. Київ, аеропорт</CardDescription>
+                  <CardTitle className="text-lg">Адрес</CardTitle>
+                  <CardDescription>г. Москва, аэропорт</CardDescription>
                 </CardHeader>
               </Card>
             </div>
             <div className="flex justify-center space-x-4">
               <Button size="lg">
                 <Icon name="Send" size={20} className="mr-2" />
-                Написати нам
+                Написать нам
               </Button>
               <Button size="lg" variant="outline">
                 <Icon name="Calendar" size={20} className="mr-2" />
-                Записатись на курс
+                Записаться на курс
               </Button>
             </div>
           </div>
@@ -332,10 +332,10 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Icon name="Plane" size={24} />
-            <span className="text-xl font-bold">Школа Пілотів</span>
+            <span className="text-xl font-bold">Школа Пилотов</span>
           </div>
           <p className="text-sm opacity-80">
-            © 2024 Школа Пілотів. Професійна авіаційна освіта.
+            © 2024 Школа Пилотов. Профессиональное авиационное образование.
           </p>
         </div>
       </footer>
